@@ -80,7 +80,7 @@ app.get('/', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ArticleName', function(req, res){
+app.get('/:ArticleName', function(req, res){
     //ArticleName == article-one
     //Articles[ArticleName]=={} content of article one
     var ArticleName = req.params.ArticleName;
